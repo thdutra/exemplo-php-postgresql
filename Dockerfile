@@ -1,7 +1,7 @@
 FROM debian:trixie
 
 RUN apt-get update && apt-get -y upgrade
-RUN apt-get install -y apache2 libapache2-mod-php
+RUN apt-get install -y apache2 libapache2-mod-php php-pgsql
 
 EXPOSE 80
 
